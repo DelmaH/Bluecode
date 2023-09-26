@@ -1,0 +1,104 @@
+/* Estilos para la página de actualización de pacientes (update_pac.php) */
+
+/* Resetear estilos por defecto del navegador */
+body, h1, h2, h3, p, ul, li, form, input {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.container, .cont_perfil{
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    display: grid;
+    margin-top: 115px;
+}
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form input[type="password"],
+form input[type="bigint"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+.form-group{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+form input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+form button {
+    background-color: #3e5481;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.all{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.img_perf{
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    width: 90px;
+    height: 80px;
+    margin-bottom:-40px;
+}
+.imgperfil{
+    border-radius: 45%;
+    width: 90px;
+    height: 80px;
+}
+/* Estilos para pantallas más pequeñas */
+@media screen and (max-width: 600px) {
+    form label {
+        font-size: 14px;
+    }
+
+    form input[type="text"],
+    form input[type="number"],
+    form input[type="email"] {
+        margin-bottom: 8px;
+    }
+}
